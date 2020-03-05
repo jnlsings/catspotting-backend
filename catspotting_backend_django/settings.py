@@ -31,9 +31,9 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:3000',
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     'http://localhost:3000',
+# ]
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'corsheaders',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Custom user model
+AUTH_USER_MODEL = 'authentication.CustomUser'
