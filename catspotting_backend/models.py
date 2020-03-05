@@ -3,6 +3,11 @@ from django.db import models
 # Create your models here.
 
 
+# class User(models.Model):
+#     name =
+#     user_name = models.CharField(max_length=15)
+
+
 class Post(models.Model):
     author = models.CharField(max_length=1000)
     body = models.CharField(max_length=1000)
