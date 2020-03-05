@@ -28,11 +28,11 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:4000',
+    'http://localhost:8000',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:4000',
+    'http://localhost:8000',
 ]
 
 REST_FRAMEWORK = {
