@@ -13,6 +13,7 @@ psycopg2-binary = "*"
 python-decouple = "*"
 django-extensions = "*"
 djangorestframework = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.8"
