@@ -5,6 +5,7 @@ from django.db import models
 
 class Post(models.Model):
     author = models.CharField(max_length=1000)
+    location = models.CharField(max_length=200)
     body = models.CharField(max_length=180)
     img_url = models.TextField()
 
