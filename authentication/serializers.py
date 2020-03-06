@@ -1,23 +1,36 @@
-# # https: // medium.com/@dakota.lillie/django-react-jwt-authentication-5015ee00ef9a
-
-# from rest_framework import serializers
-# # from rest_framework_simplejwt.settings import api_settings
-# from django.contrib.auth.models import User
-
-# # Serializers will serialize/unserialize User model in and out of various formats, primarily JSON
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework import serializers
+from .models import CustomUser
 
 
-# class UserSerializer(serializers.ModelSerializer):
+class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
-#     class Meta:
-#         model = User
-#         fields = ('username',)
+    @classmethod
+    def get_token(cls, user):
+        token = super(MyTokenObtainPairSerializer, cls).get_token(user)
+
+        # Add custom claims
+        token['img_url'] = user.img_url
+        return token
 
 
-# class UserSerializerWithToken(serializers.ModelSerializer):
+class CustomUserSerializer(serializers.ModelSerializer):
 
-#     token = serializers.SerializerMethodField()
-#     password = serializers.CharField(write_only=True)
+    email = serializers.EmailField(
+        required=False
+    )
+    username = serializers.CharField()
+    password = serializers.CharField(min_length=8, write_only=True)
 
-#     def get_token(self, obj):
-#         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+    class Meta:
+        model = CustomUser
+        fields = ('email', 'username', 'password')
+        extra_kwargs = {'password': {'write_only': True}}
+
+    def create(self, validated_data):
+        password = validated_data.pop('password', None)
+        instance = self.Meta.model(**validated_data)
+        if password is not None:
+            instance.set_password(password)
+        instance.save()
+        return instance
