@@ -4,23 +4,22 @@ from .models import Post, Comment
 # inheriting from superclass/baseclass serializers, specifically inheriting from the Hyperlinked Model Serializer
 
 
-class PostSerializer(serializers.HyperlinkedModelSerializer):
+class PostSerializer(serializers.ModelSerializer):
     # when we serialize stuff for a Post, we want to add comments to that and we're gonna set the comments using the comment_detail view, this is a 1 to many relationship so we can have more than one, and these will all be read-only
-    comments = serializers.HyperlinkedRelatedField(
-        view_name='comment_detail',
+    # Return comments data as a string
+    comments = serializers.StringRelatedField(
         many=True,
         read_only=True
     )
-    # how do we want this info to actually be returned
+    #
 
     class Meta:
         model = Post
         fields = ('id', 'author', 'location', 'body', 'img_url', 'comments',)
 
 
-class CommentSerializer(serializers.HyperlinkedModelSerializer):
-    post = serializers.HyperlinkedRelatedField(
-        view_name='post_detail',
+class CommentSerializer(serializers.ModelSerializer):
+    post = serializers.StringRelatedField(
         read_only=True
     )
 
