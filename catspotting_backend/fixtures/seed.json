@@ -1,0 +1,100 @@
+[
+  {
+    "model": "catspotting_backend.post",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "GASP",
+      "img_url": "https: //i.imgur.com/zGs25jd.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 2,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "A friend",
+      "img_url": "https://i.imgur.com/YdqnfbW.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 3,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "Wot a lad",
+      "img_url": "https://i.imgur.com/8pJW7zd.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 4,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "LOOK AT HIMB",
+      "img_url": "https://i.imgur.com/BQAQb8y.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 5,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "Show off",
+      "img_url": "https://i.imgur.com/iSmtynw.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 6,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "He loves pats",
+      "img_url": "https://i.imgur.com/8wucYp8.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 7,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "The face of mischief",
+      "img_url": "https://i.imgur.com/eM7uOe7.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 8,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "Mah heart",
+      "img_url": "https://i.imgur.com/NDlPNY0.jpg"
+    }
+  },
+
+  {
+    "model": "catspotting_backend.post",
+    "pk": 9,
+    "fields": {
+      "owner": 1,
+      "location": "Austin, TX",
+      "body": "Dorty",
+      "img_url": "https://i.imgur.com/4PzrJ9h.jpg"
+    }
+  }
+]
