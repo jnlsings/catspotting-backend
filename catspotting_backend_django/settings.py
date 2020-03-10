@@ -123,7 +123,7 @@ DATABASES = {
         'NAME': 'catspotting_backend',
         'USER': 'catspotting_backend_user',
         'PASSWORD': 'catspotting_backend',
-        'HOST': 'catspotting-api.herokuapp.com',
+        'HOST': 'herokuapp.com',
     }
 }
 
