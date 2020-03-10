@@ -121,9 +121,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'catspotting_backend',
-        'USER': 'config('DB_USER')',
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
+        'USER': 'catspotting_backend_user',
+        'PASSWORD': 'catspotting_backend',
+        'HOST': 'catspotting-api.herokuapp.com',
     }
 }
 
