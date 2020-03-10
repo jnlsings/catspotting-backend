@@ -120,8 +120,8 @@ WSGI_APPLICATION = 'catspotting_backend_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
+        'NAME': 'catspotting_backend',
+        'USER': 'config('DB_USER')',
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
     }
