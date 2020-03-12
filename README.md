@@ -101,7 +101,7 @@ Upon deployment, Heroku wouldn't display the app and kept returning either a req
 ## Sources
 
 ### Database Media
-[Imgur](https://imgur.com/)
+[Jaimie Lowe's Imgur](https://imgur.com/)
 
 ### Deploying to Heroku
 [Sarah Panaligan's Tutorial](https://www.spiano.dev/djangoTutorial/#deploy)
