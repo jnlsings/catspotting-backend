@@ -1,5 +1,5 @@
 # Catspotting
-# An App for and by Cat Lovers
+## An App for and by Cat Lovers
 
 ## API Overview
 
