@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
     posts = serializers.StringRelatedField(
-        # view_name='post_detail',
+
         many=True,
         read_only=True
     )
@@ -13,6 +13,8 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'password', 'posts')
+
+# Password hashing from https://hackernoon.com/110percent-complete-jwt-authentication-with-django-and-react-2020-iejq34ta
 
     def create(self, validated_data):
         password = validated_data.pop('password', None)
@@ -24,7 +26,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class PostSerializer(serializers.ModelSerializer):
-    # when we serialize stuff for a Post, we want to add comments to that and we're gonna set the comments using the comment_detail view, this is a 1 to many relationship so we can have more than one, and these will all be read-only
+    # when we serialize data for a Post, we want to add its comments to that and we're gonna set the comments using the comment_detail view, this is a 1 to many relationship so we can have more than one, and these will all be read-only
     # Return comments data as a string
     owner = serializers.ReadOnlyField(source='owner.username')
     comments = serializers.StringRelatedField(
