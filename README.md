@@ -9,23 +9,26 @@ Our API is built with a PostgreSQL database, using Django Rest Framework with Py
 
 *new to us
 
-- Database
-   - [PostgreSQL](https://www.postgresql.org/)
+### Database
+[PostgreSQL](https://www.postgresql.org/)
    
-- Functionality
-   - [Django/Django Rest Framework](https://www.django-rest-framework.org/)
-   - Python 3.8.1
-   - Pipenv
+### Functionality
+[Django/Django Rest Framework](https://www.django-rest-framework.org/)
+<br />
+Python 3.8.1
+<br />
+Pipenv
    
-- Connection between back and front ends
-   - [Cors](https://github.com/adamchainz/django-cors-headers)
+### Connection between back and front ends
+[Cors](https://github.com/adamchainz/django-cors-headers)
  
-- Authentication
-   - *[Simple JWT](https://github.com/SimpleJWT/django-rest-framework-simplejwt)
+### Authentication
+*[Simple JWT](https://github.com/SimpleJWT/django-rest-framework-simplejwt)
    
-- Debugging
-  - *[Django Debug Toolbar](https://github.com/jazzband/django-debug-toolbar/)
-  - *[Pympler](https://pympler.readthedocs.io/en/latest/)
+### Debugging
+*[Django Debug Toolbar](https://github.com/jazzband/django-debug-toolbar/)
+<br />
+*[Pympler](https://pympler.readthedocs.io/en/latest/)
   
  ## Code Samples
  
@@ -97,7 +100,7 @@ Upon deployment, Heroku wouldn't display the app and kept returning either a req
 
 ## Sources
 
-### Database Media:
+### Database Media
 [Imgur](https://imgur.com/)
 
 ### Deploying to Heroku
