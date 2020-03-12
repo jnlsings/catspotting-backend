@@ -5,7 +5,7 @@
 
 Our API is built with a PostgreSQL database, using Django Rest Framework with Python to structure our models and data and handle our HTTP requests. JSON data was hard coded and seeded using fixtures.
 
-### Technologies used
+## Technologies used
 
 *new to us
 
