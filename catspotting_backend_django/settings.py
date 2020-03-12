@@ -41,6 +41,7 @@ ALLOWED_HOSTS = ['localhost', 'catspotting-api.herokuapp.com']
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
+    'http://catspotting-frontend.herokuapp.com',
 ]
 
 # CSRF_TRUSTED_ORIGINS = [
