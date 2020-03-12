@@ -15,9 +15,9 @@ Our API is built with a PostgreSQL database, using Django Rest Framework with Py
 ### Functionality
 [Django/Django Rest Framework](https://www.django-rest-framework.org/)
 <br />
-Python 3.8.1
+[Python 3.8.1](https://www.python.org/downloads/release/python-381/)
 <br />
-Pipenv
+[Pipenv](https://realpython.com/pipenv-guide/)
    
 ### Connection between back and front ends
 [Cors](https://github.com/adamchainz/django-cors-headers)
