@@ -2,6 +2,8 @@ from rest_framework import serializers
 from .models import Post, Comment
 from django.contrib.auth.models import User
 
+# User/Password serializers based on Jennifer Meade's example
+
 
 class UserSerializer(serializers.ModelSerializer):
     posts = serializers.StringRelatedField(

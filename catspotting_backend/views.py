@@ -6,7 +6,7 @@ from .permissions import IsOwnerOrReadOnly
 from .serializers import UserSerializer, PostSerializer, CommentSerializer, ChangePasswordSerializer
 from .models import User, Post, Comment
 
-# Create your views here.
+# User/Password views based on Jennifer Meade's example
 
 
 class UserList(generics.ListCreateAPIView):

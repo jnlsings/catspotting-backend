@@ -1,5 +1,7 @@
 from rest_framework import permissions
 
+# Permissions.py borrowed from Jennifer Meade
+
 
 class IsOwnerOrReadOnly(permissions.BasePermission):
 
